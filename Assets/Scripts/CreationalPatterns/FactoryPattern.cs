@@ -1,4 +1,4 @@
-namespace DesignPatterns
+namespace DesignPatterns.FactoryPattern
 {
     using System;
     using UnityEngine;
@@ -27,6 +27,7 @@ namespace DesignPatterns
             return null;
         }
     }
+
 
 
     public abstract class Food
