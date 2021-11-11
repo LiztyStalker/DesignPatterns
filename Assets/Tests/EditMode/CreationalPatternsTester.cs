@@ -56,6 +56,34 @@ public class CreationalPatternsTester
         Assert.AreEqual(vendingMachine.ToString(), "음식자판기");
         Assert.AreEqual(soup.ToString(), "수프");
         Assert.AreEqual(bread.ToString(), "빵");
+    }
+
+    [Test]
+    public void CreationalPatterns_AbstractFactoryPattern()
+    {
+        DesignPatterns.AbstractFactoryPattern.FoodMaker koreanStyleVendingMachine = new DesignPatterns.AbstractFactoryPattern.KoreanStyleFoodVendingMachine();
+        DesignPatterns.AbstractFactoryPattern.FoodMaker westernStyleVendingMachine = new DesignPatterns.AbstractFactoryPattern.WesternStyleFoodVendingMachine();
+
+        Debug.Log(koreanStyleVendingMachine.ToString());
+        Debug.Log(westernStyleVendingMachine.ToString());
+
+        Assert.AreEqual(koreanStyleVendingMachine.ToString(), "한식자판기");
+        Assert.AreEqual(westernStyleVendingMachine.ToString(), "양식자판기");
+
+        var koMeal = koreanStyleVendingMachine.CreateMeal();
+        var koDessert = koreanStyleVendingMachine.CreateDessert();
+        var weMeal = westernStyleVendingMachine.CreateMeal();
+        var weDessert = westernStyleVendingMachine.CreateDessert();
+
+        Debug.Log(koMeal.ToString());
+        Debug.Log(koDessert.ToString());
+        Debug.Log(weMeal.ToString());
+        Debug.Log(weDessert.ToString());
+
+        Assert.AreEqual(koMeal.ToString(), "국밥");
+        Assert.AreEqual(koDessert.ToString(), "수정과");
+        Assert.AreEqual(weMeal.ToString(), "파스타");
+        Assert.AreEqual(weDessert.ToString(), "푸딩");
 
     }
 }
