@@ -10,7 +10,7 @@ public class CreationalPatternsTester
 
 
     [Test]
-    public void CreationalPatterns_FactoryPatterns()
+    public void CreationalPatterns_FactoryPattern()
     {
         var soup = FoodMaker.GetInstance("Soup");
         var bread = FoodMaker.GetInstance("Bread");
@@ -30,5 +30,13 @@ public class CreationalPatternsTester
         Assert.AreEqual(soupGen.ToString(), "수프");
         Assert.AreEqual(breadGen.ToString(), "빵");
        
+    }
+
+    [Test]
+    public void CreationalPatterns_SingletonPattern()
+    {
+        var market = FoodMarket.current;
+        Debug.Log(market.ToString());
+        Assert.AreEqual(market.ToString(), "음식상점");
     }
 }
