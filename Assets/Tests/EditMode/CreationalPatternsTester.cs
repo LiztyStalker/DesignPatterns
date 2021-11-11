@@ -86,4 +86,14 @@ public class CreationalPatternsTester
         Assert.AreEqual(weDessert.ToString(), "푸딩");
 
     }
+
+    [Test]
+    public void CreationalPatterns_BuilderPattern()
+    {
+        var recipe = new DesignPatterns.BuilderPattern.BakeRecipe();
+        var builder = new DesignPatterns.BuilderPattern.Oven(recipe);
+        var food = builder.Build().GetInstance();
+        Debug.Log(food.ToString());
+        Assert.AreEqual(food.ToString(), "소금 : 5\n소등심 : 250\n양파 : 100\n콩기름 : 40\n");
+    }
 }
