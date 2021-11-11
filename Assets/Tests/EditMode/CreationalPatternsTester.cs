@@ -96,4 +96,12 @@ public class CreationalPatternsTester
         Debug.Log(food.ToString());
         Assert.AreEqual(food.ToString(), "¼Ò±Ý : 5\n¼Òµî½É : 250\n¾çÆÄ : 100\nÄá±â¸§ : 40\n");
     }
+
+    [Test]
+    public void CreationalPatterns_PrototypePattern()
+    {
+        var pasture = DesignPatterns.PrototypePattern.Pasture.GetInstance();
+        Debug.Log(pasture.ToString());
+        Assert.AreEqual(pasture.ToString(), "´ß : 5\n¿À¸® : 3\n´ß : 5\n´ß : 5\n´ß : 5\n¿À¸® : 3\n");
+    }
 }
