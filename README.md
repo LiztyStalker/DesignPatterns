@@ -9,7 +9,7 @@
 ## 3. 생성 패턴 (Creational Patterns)
 ### [1. 팩토리 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/FactoryPattern.md)
 ### [2. 싱글턴 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/SingletonPattern.md)
-### 3. 팩토리 메서드 패턴
+### [3. 팩토리 메서드 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/FactoryMethodPattern.md)
 ### 4. 추상 팩토리 패턴
 ### 5. 빌더 패턴
 ### 6. 프로토타입 패턴
