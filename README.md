@@ -12,7 +12,7 @@
 ### [3. 팩토리 메서드 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/FactoryMethodPattern.md)
 ### [4. 추상 팩토리 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/AbstractFactoryPattern.md)
 ### [5. 빌더 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/BuilderPattern.md)
-### 6. 프로토타입 패턴
+### [6. 프로토타입 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/PrototypePattern.md)
 ***
 ## 4. 구조 패턴 (Structural Patterns)
 ### 1. 어댑터 패턴
