@@ -4,7 +4,6 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using DesignPatterns;
-using DesignPatterns.FactoryPattern;
 
 public class CreationalPatternsTester
 {
@@ -22,8 +21,8 @@ public class CreationalPatternsTester
         Assert.AreEqual(soup.ToString(), "¼öÇÁ");
         Assert.AreEqual(bread.ToString(), "»§");
 
-        var soupGen = DesignPatterns.FactoryPattern.FoodMaker.GetInstance<Soup>();
-        var breadGen = DesignPatterns.FactoryPattern.FoodMaker.GetInstance<Bread>();
+        var soupGen = DesignPatterns.FactoryPattern.FoodMaker.GetInstance<DesignPatterns.FactoryPattern.Soup>();
+        var breadGen = DesignPatterns.FactoryPattern.FoodMaker.GetInstance<DesignPatterns.FactoryPattern.Bread>();
 
         Debug.Log(soupGen.ToString());
         Debug.Log(breadGen.ToString());
