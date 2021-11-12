@@ -15,7 +15,7 @@
 ### [6. 프로토타입 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/PrototypePattern.md)
 ***
 ## 4. 구조 패턴 (Structural Patterns)
-### 1. 어댑터 패턴
+### [1. 어댑터 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/AdapterPattern.md)
 ### 2. 브릿지 패턴
 ### 3. 컴포짓 패턴
 ### 4. 데코레이터 패턴
