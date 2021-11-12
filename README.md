@@ -16,7 +16,7 @@
 ***
 ## 4. 구조 패턴 (Structural Patterns)
 ### [1. 어댑터 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/AdapterPattern.md)
-### 2. 브릿지 패턴
+### [2. 브릿지 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/BridgePattern.md)
 ### 3. 컴포짓 패턴
 ### 4. 데코레이터 패턴
 ### 5. 파사드 패턴
@@ -40,3 +40,5 @@
 ### * 참고
 * 쉽게 배워 바로 써먹는 디자인패턴 
   + http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791162243404
+* UML
+  + https://en.wikipedia.org/wiki/Design_Patterns
