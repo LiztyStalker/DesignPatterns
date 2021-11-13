@@ -34,7 +34,31 @@ public class StructuralPatternsTester
         Debug.Log(foodProcesser.GetValue());
         Assert.AreEqual(mortar.GetValue(), 15f);
         Assert.AreEqual(foodProcesser.GetValue(), 30f);
+    }
 
+    [Test]
+    public void StructuralPatterns_CompositePattern()
+    {
+        var root = new DesignPatterns.CompositePattern.Box("큰박스");
+        var box1 = new DesignPatterns.CompositePattern.Box("박스1");
+//        var box2 = new DesignPatterns.CompositePattern.Box("박스2");
+
+
+        var box11 = new DesignPatterns.CompositePattern.Box("박스11");
+
+        var box111 = new DesignPatterns.CompositePattern.Box("박스111");
+        var tray1 = new DesignPatterns.CompositePattern.Box("트레이1");
+        var tray11 = new DesignPatterns.CompositePattern.Box("트레이11");
+
+        box1.Add(box11);
+
+        box11.Add(box111);
+        box111.Add(tray11);
+        box11.Add(tray1);
+
+        root.Add(box1);
+
+        Debug.Log(root.ToString());
 
     }
 }
