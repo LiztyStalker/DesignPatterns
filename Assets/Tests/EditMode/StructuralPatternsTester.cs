@@ -61,4 +61,16 @@ public class StructuralPatternsTester
         Debug.Log(root.ToString());
 
     }
+
+    [Test]
+    public void StructuralPatterns_DecoratorPattern()
+    {
+        var soup = new DesignPatterns.DecoratorPattern.Soup();
+
+        var seasoning = new DesignPatterns.DecoratorPattern.Seasoning(soup);
+        var source = new DesignPatterns.DecoratorPattern.Source(seasoning);
+
+        Debug.Log(source.ToString());
+        Assert.AreEqual(source.ToString(), "수프+조미료첨가+소스첨가");
+    }
 }
