@@ -73,4 +73,14 @@ public class StructuralPatternsTester
         Debug.Log(source.ToString());
         Assert.AreEqual(source.ToString(), "수프+조미료첨가+소스첨가");
     }
+
+    [Test]
+    public void StructuralPatterns_FasadePattern()
+    {
+        var kitchen = new DesignPatterns.FasadePattern.Kitchen();
+        kitchen.SetOrder("수프", "빵");
+        kitchen.SetOrder("빵");
+        Debug.Log(kitchen.ToString());
+        Assert.AreEqual(kitchen.ToString(), "1번째 식사\n수프 100\n호밀빵 50\n2번째 식사\n호밀빵 50\n");
+    }
 }
