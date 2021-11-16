@@ -83,4 +83,24 @@ public class StructuralPatternsTester
         Debug.Log(kitchen.ToString());
         Assert.AreEqual(kitchen.ToString(), "1번째 식사\n수프 100\n호밀빵 50\n2번째 식사\n호밀빵 50\n");
     }
+
+    [Test]
+    public void StructuralPatterns_FlyweightPattern()
+    {
+        var market = new DesignPatterns.FlyweightPattern.Market();
+        var tomato1 = market.GetGoodsData("토마토", 10);
+        var tomato2 = market.GetGoodsData("토마토", 7);
+        var tomato3 = market.GetGoodsData("토마토", 10);
+        var radish = market.GetGoodsData("무우", 5);
+        var springonion = market.GetGoodsData("대파", 3);
+
+
+        market.PutGoodsData(tomato1, 100);
+        market.PutGoodsData(tomato2, 200);
+        market.PutGoodsData(tomato3, 1000);
+        market.PutGoodsData(radish, 200);
+        market.PutGoodsData(springonion, 200);
+
+        Debug.Log(market.ToBill());
+    }
 }
