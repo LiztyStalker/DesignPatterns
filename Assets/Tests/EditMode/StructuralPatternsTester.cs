@@ -103,4 +103,17 @@ public class StructuralPatternsTester
 
         Debug.Log(market.ToBill());
     }
+    
+    [Test]
+    public void StructuralPatterns_ProxyPattern()
+    {
+        DesignPatterns.ProxyPattern.Food tomato  = new DesignPatterns.ProxyPattern.Food("토마토", new System.DateTime(2020, 12, 1));
+        DesignPatterns.ProxyPattern.Food pemican = new DesignPatterns.ProxyPattern.Food("페미컨", new System.DateTime(2120, 12, 1));
+
+        DesignPatterns.ProxyPattern.IFood tomatoWrapper = new DesignPatterns.ProxyPattern.FoodWrapper(tomato);
+        DesignPatterns.ProxyPattern.IFood pemicanWrapper = new DesignPatterns.ProxyPattern.FoodWrapper(pemican);
+
+        Debug.Log(tomatoWrapper.ToString());
+        Debug.Log(pemicanWrapper.ToString());
+    }
 }
