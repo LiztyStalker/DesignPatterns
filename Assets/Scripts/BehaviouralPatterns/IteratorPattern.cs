@@ -17,24 +17,24 @@ namespace DesignPatterns.IteratorPattern
 
     public class Iterator : IIterator //Iterator1
     {
-        private List<Food> _list = new List<Food>();
+        private Bucket _bucket;
         private int _index = 0;
 
-        public Iterator(Food[] foods)
+        public Iterator(Bucket bucket)
         {
             _index = 0;
-            _list.AddRange(foods);
+            _bucket = bucket;
         }
 
         public bool HasNext()
         {
-            return _index < _list.Count;
+            return _index < _bucket.GetLength();
         }
 
         public Food Next()
         {
-            if(_index < _list.Count)
-                return _list[_index++];
+            if(_index < _bucket.GetLength())
+                return _bucket[_index++];
             throw new System.Exception();
         }
 
@@ -48,6 +48,16 @@ namespace DesignPatterns.IteratorPattern
     public class Bucket : IBucket //Aggregate1
     {
         private Food[] foods;
+
+        public Food this[int i]
+        {
+            get
+            {
+                return foods[i];
+            }
+        }
+
+        public int GetLength() => foods.Length;
         public Bucket(params string[] arr)
         {
             foods = new Food[arr.Length];
@@ -59,7 +69,7 @@ namespace DesignPatterns.IteratorPattern
 
         public IIterator CreateIterator()
         {
-            var iterator = new Iterator(foods);
+            var iterator = new Iterator(this);
             return iterator;
         }
     }
