@@ -3,4 +3,4 @@
 ***
 ![반복자 패턴 UML](./Images/iteratorPattern_UML.PNG)
 ![반복자 패턴 시퀀스 UML](./Images/iteratorPattern_Sequence_UML.PNG)
-![반복자 패턴 예제 UML](./Images/iteractorPattern_UML_ex.PNG)
+![반복자 패턴 예제 UML](./Images/iteratorPattern_UML_ex.PNG)
