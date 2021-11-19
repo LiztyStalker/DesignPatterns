@@ -17,5 +17,25 @@ public class BehaviouralPatternsTester
             Debug.Log(iterator.Next());
         }
     }
-    
+
+    [Test]
+    public void BehaviouralPatterns_CommandPattern()
+    {
+        var invoker = new DesignPatterns.CommandPattern.Invoker();
+        var human = new DesignPatterns.CommandPattern.Human();
+
+        var getCmd = new DesignPatterns.CommandPattern.GetCommand(human);
+        var dropCmd = new DesignPatterns.CommandPattern.DropCommand(human);
+        var showCmd = new DesignPatterns.CommandPattern.ShowCommand(human);
+
+        invoker.SetCommand("집기", getCmd);
+        invoker.SetCommand("버리기", dropCmd);
+        invoker.SetCommand("보기", showCmd);
+
+        invoker.Execute("집기", "마늘");
+        Debug.Log(invoker.Execute("보기"));
+        invoker.Execute("버리기", "마늘");
+        Debug.Log(invoker.Execute("보기"));
+    }
+
 }
