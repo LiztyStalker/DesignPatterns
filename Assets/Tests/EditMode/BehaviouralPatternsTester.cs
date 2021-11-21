@@ -38,4 +38,20 @@ public class BehaviouralPatternsTester
         Debug.Log(invoker.Execute("보기"));
     }
 
+    [Test]
+    public void BehaviouralPatterns_VisitorPattern()
+    {
+        DesignPatterns.VisitorPattern.ICart cart1 = new DesignPatterns.VisitorPattern.Cart("토마토", 100);
+        DesignPatterns.VisitorPattern.ICart cart2 = new DesignPatterns.VisitorPattern.Cart("감자", 200);
+        DesignPatterns.VisitorPattern.ICart cart3 = new DesignPatterns.VisitorPattern.Cart("양파", 50);
+
+        DesignPatterns.VisitorPattern.IVisitor visitant = new DesignPatterns.VisitorPattern.Visitant();
+
+        Debug.Log(cart1.Accept(visitant));
+        Debug.Log(cart2.Accept(visitant));
+        Debug.Log(cart3.Accept(visitant));
+
+        Debug.Log($"{visitant.TotalNumber} {visitant.TotalPrice}");
+    }
+
 }
