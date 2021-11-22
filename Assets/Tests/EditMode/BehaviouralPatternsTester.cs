@@ -54,4 +54,11 @@ public class BehaviouralPatternsTester
         Debug.Log($"{visitant.TotalNumber} {visitant.TotalPrice}");
     }
 
+    [Test]
+    public void BehaviouralPatterns_ChainPattern()
+    {
+        var sender = new DesignPatterns.ChainPattern.Sender();
+        Debug.Log(sender.Execute("Order"));
+        Debug.Log(sender.Execute("Cancel"));
+    }
 }
