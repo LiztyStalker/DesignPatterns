@@ -26,8 +26,8 @@
 ***
 ## 5. 행동 패턴 (Behavioural Patterns)
 ### [1. 반복자 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/IteratorPattern.md)
-### 2. 커맨드 패턴
-### 3. 방문 패턴
+### [2. 커맨드 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/CommandPattern.md)
+### [3. 방문자 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/VisitorPattern.md)
 ### 4. 체인 패턴
 ### 5. 옵저버 패턴
 ### 6. 중재자 패턴
