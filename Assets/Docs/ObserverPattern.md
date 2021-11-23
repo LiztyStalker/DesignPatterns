@@ -3,4 +3,4 @@
 ***
 ![옵저버 패턴 UML](./Images/observerPattern_UML.PNG)
 ![옵저버 패턴 시퀀스 UML](./Images/observerPattern_Sequence_UML.PNG)
-![옵저버 패턴 예제 UML](./Images/adapterPattern_UML_ex.PNG)
+![옵저버 패턴 예제 UML](./Images/observerPattern_UML_ex.PNG)
