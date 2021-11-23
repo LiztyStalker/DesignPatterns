@@ -61,4 +61,18 @@ public class BehaviouralPatternsTester
         Debug.Log(sender.Execute("Order"));
         Debug.Log(sender.Execute("Cancel"));
     }
+
+    [Test]
+    public void BehaviouralPatterns_ObserverPattern()
+    {
+        DesignPatterns.ObserverPattern.ISubject market = new DesignPatterns.ObserverPattern.RetailStore();
+        market.Attach(new DesignPatterns.ObserverPattern.Food("토마토", 1000));
+        market.Attach(new DesignPatterns.ObserverPattern.Food("양파", 500));
+        market.Attach(new DesignPatterns.ObserverPattern.Food("마늘", 750));
+
+        market.Notify();
+
+        Debug.Log(market.ToString());
+
+    }
 }
