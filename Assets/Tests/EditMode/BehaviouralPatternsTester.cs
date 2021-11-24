@@ -75,4 +75,28 @@ public class BehaviouralPatternsTester
         Debug.Log(market.ToString());
 
     }
+
+    [Test]
+    public void BehaviouralPatterns_MediatorPattern()
+    {
+        DesignPatterns.MadiatorPattern.Mediator mediator = new DesignPatterns.MadiatorPattern.Server();
+
+        DesignPatterns.MadiatorPattern.Colleague user1 = new DesignPatterns.MadiatorPattern.User("Steve");
+        user1.SetMediator(mediator);
+        mediator.AddColleague(user1);
+
+        DesignPatterns.MadiatorPattern.Colleague user2 = new DesignPatterns.MadiatorPattern.User("John");
+        user2.SetMediator(mediator);
+        mediator.AddColleague(user2);
+
+        DesignPatterns.MadiatorPattern.Colleague user3 = new DesignPatterns.MadiatorPattern.User("Glave");
+        user3.SetMediator(mediator);
+        mediator.AddColleague(user3);
+
+        user1.Send("보내기1");
+        user2.Send("보내기2");
+        user3.Send("보내기3");
+
+
+    }
 }
