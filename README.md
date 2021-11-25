@@ -31,7 +31,7 @@
 ### [4. 체인 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/ChainPattern.md)
 ### [5. 옵저버 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/ObserverPattern.md)
 ### [6. 중재자 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/MediatorPattern.md)
-### 7. 상태 패턴
+### [7. 상태 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/StatePattern.md)
 ### 8. 메멘토 패턴
 ### 9. 템플릿 메서드 패턴
 ### 10. 전략 패턴
