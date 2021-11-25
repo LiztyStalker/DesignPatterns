@@ -96,7 +96,18 @@ public class BehaviouralPatternsTester
         user1.Send("보내기1");
         user2.Send("보내기2");
         user3.Send("보내기3");
+    }
 
+    [Test]
+    public void BehaviouralPatterns_StatePattern()
+    {
+        var context = new DesignPatterns.StatePattern.Context();
+
+        Debug.Log(context.Process("order"));
+        Debug.Log(context.Process("pay"));
+        Debug.Log(context.Process("ordered"));
+        Debug.Log(context.Process("finish"));
+        Debug.Log(context.Process("other"));
 
     }
 }
