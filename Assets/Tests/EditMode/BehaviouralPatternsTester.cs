@@ -110,4 +110,39 @@ public class BehaviouralPatternsTester
         Debug.Log(context.Process("other"));
 
     }
+
+
+    [Test]
+    public void BehaviouralPatterns_MementoPattern()
+    {
+        var caretaker = new DesignPatterns.MementoPattern.Caretaker();
+        var origin = new DesignPatterns.MementoPattern.Originator();
+
+        var msg = new DesignPatterns.MementoPattern.MessageData("∏ﬁ∏‡≈‰1");
+
+        Debug.Log(msg.Message);
+
+        origin.SetState(msg);
+        caretaker.Push(origin);
+
+        msg.SetMessage("∏ﬁ∏‡≈‰2");
+        Debug.Log(msg.Message);
+        origin.SetState(msg);
+        caretaker.Push(origin);
+
+        msg.SetMessage("∏ﬁ∏‡≈‰3");
+        Debug.Log(msg.Message);
+        origin.SetState(msg);
+        caretaker.Push(origin);
+
+        msg = caretaker.Undo(origin);
+        Debug.Log(msg.Message);
+
+        msg = caretaker.Undo(origin);
+        Debug.Log(msg.Message);
+
+        msg = caretaker.Undo(origin);
+        Debug.Log(msg.Message);
+
+    }
 }
