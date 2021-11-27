@@ -145,4 +145,14 @@ public class BehaviouralPatternsTester
         Debug.Log(msg.Message);
 
     }
+
+    [Test]
+    public void BehaviouralPatterns_TemplateMethodPattern()
+    {
+        DesignPatterns.TemplateMethodPattern.Work company = new DesignPatterns.TemplateMethodPattern.CompanyWork();
+        company.Process();
+
+        DesignPatterns.TemplateMethodPattern.Work home = new DesignPatterns.TemplateMethodPattern.HomeWork();
+        home.Process();
+    }
 }
