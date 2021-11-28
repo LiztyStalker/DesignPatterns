@@ -34,7 +34,7 @@
 ### [7. 상태 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/StatePattern.md)
 ### [8. 메멘토 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/MementoPattern.md)
 ### [9. 템플릿 메서드 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/TemplateMethodPattern.md)
-### [10. 전략 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/StrategyMethodPattern.md)
+### [10. 전략 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/StrategyPattern.md)
 ### [11. 인터프리터 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/InterpreterMethodPattern.md)
 ***
 ### * 참고
