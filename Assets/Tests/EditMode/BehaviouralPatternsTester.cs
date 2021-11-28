@@ -172,7 +172,15 @@ public class BehaviouralPatternsTester
         kitchen.SetStrategy(fri);
 
         Debug.Log(kitchen.Cook(food));
+    }
 
+    [Test]
+    public void BehaviouralPatterns_InterpreterPattern()
+    {
+        var interpret = new DesignPatterns.InterpreterPattern.Client();
+        Debug.Log(interpret.Interpret("1 1 +"));
+        Debug.Log(interpret.Interpret("1 1"));
+        Debug.Log(interpret.Interpret("+ 1"));
     }
 }
 
