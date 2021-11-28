@@ -35,7 +35,7 @@
 ### [8. 메멘토 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/MementoPattern.md)
 ### [9. 템플릿 메서드 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/TemplateMethodPattern.md)
 ### [10. 전략 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/StrategyPattern.md)
-### [11. 인터프리터 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/InterpreterMethodPattern.md)
+### [11. 인터프리터 패턴](https://github.com/LiztyStalker/DesignPatterns/blob/master/Assets/Docs/InterpreterPattern.md)
 ***
 ### * 참고
 * 쉽게 배워 바로 써먹는 디자인패턴 
