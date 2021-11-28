@@ -1,4 +1,4 @@
-# DesignPatterns - 작성중
+# DesignPatterns
 ## 1. 디자인패턴
 ***
 ## 2. 실행 방법
