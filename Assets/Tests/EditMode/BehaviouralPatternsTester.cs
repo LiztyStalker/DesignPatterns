@@ -155,4 +155,24 @@ public class BehaviouralPatternsTester
         DesignPatterns.TemplateMethodPattern.Work home = new DesignPatterns.TemplateMethodPattern.HomeWork();
         home.Process();
     }
+
+    [Test]
+    public void BehaviouralPatterns_StrategyPattern()
+    {
+        var boil = new DesignPatterns.StrategyPattern.BoilCook();
+        var fri = new DesignPatterns.StrategyPattern.FriCook();
+
+        var kitchen = new DesignPatterns.StrategyPattern.Kitchen();
+        kitchen.SetStrategy(boil);
+
+        var food = kitchen.CreateFood("°è¶õ");
+
+        Debug.Log(kitchen.Cook(food));
+
+        kitchen.SetStrategy(fri);
+
+        Debug.Log(kitchen.Cook(food));
+
+    }
 }
+
